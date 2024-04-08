@@ -5,9 +5,10 @@
 namespace ComplexLibrary{
 
 //funzione per calcolare il coniugato di un numero complesso
-ComplexNumber conjugate(ComplexNumber c)
+ComplexNumber conjugate(ComplexNumber& c1)
 {
-    return ComplexNumber(c.parteReale, -c.parteImmaginaria);
+    ComplexNumber c(c1.parteReale, -c1.parteImmaginaria);
+    return c;
 }
 
 ostream& operator<<(ostream& os, const ComplexNumber& c){

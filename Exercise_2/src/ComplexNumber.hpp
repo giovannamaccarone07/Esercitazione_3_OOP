@@ -25,9 +25,10 @@ struct ComplexNumber{
     ComplexNumber() = default;
 };
 
-ComplexNumber conjugate(ComplexNumber c);
+ComplexNumber conjugate(ComplexNumber& c1);
 
 ComplexNumber operator+(const ComplexNumber& c1, const ComplexNumber& c2);
+ostream& operator<<(ostream& os, const ComplexNumber &c);
 bool operator==(const ComplexNumber& c1, const ComplexNumber& c2);
 
 }

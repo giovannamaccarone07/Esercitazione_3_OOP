@@ -1,6 +1,5 @@
 #include <iostream>
 #include "ComplexNumber.hpp"
-#include "ComplexNumber.cpp"
 
 using namespace ComplexLibrary;
 using namespace std;
@@ -19,8 +18,7 @@ int main()
     cout << "Somma: c1 + c2 = " << somma << endl;
 
     //calcolo il coniugato
-    ComplexNumber conj = conjugate(c1);
-    cout << "Coniugato di c1: c1' = " << conj << endl;
+    cout << "Coniugato di c1: c1' = " << conjugate(c1) << endl;
 
     //verifico se sono uguali
     if(c1 == c2)
