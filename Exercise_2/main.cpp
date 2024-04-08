@@ -24,9 +24,9 @@ int main()
 
     //verifico se sono uguali
     if(c1 == c2)
-        cout << "I due numeri complessi sono diversi." << endl;
-    else
         cout << "I due numeri complessi sono uguali." << endl;
+    else
+        cout << "I due numeri complessi sono diversi." << endl;
 
     return 0;
 
